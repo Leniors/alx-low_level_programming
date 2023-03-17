@@ -11,7 +11,7 @@ int main(void)
 
 	while (letter <= 'z')
 	{
-		print("%c", letter);
+		printf("%c", letter);
 		letter++;
 		if (letter == e || letter == q)
 		{
