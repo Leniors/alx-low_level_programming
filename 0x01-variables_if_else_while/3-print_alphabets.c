@@ -14,7 +14,6 @@ int main(void)
 		printf("%c", upper_case);
 		upper_case++;
 	}
-	printf("\n");
 	while (lowwer_case <= 'Z')
 	{
 		printf("%c", lowwer_case);
