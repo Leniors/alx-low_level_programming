@@ -12,10 +12,12 @@ int main(void)
 	{
 		if (letter == 'e' || letter == 'q')
 		{
+			letter++;
 			continue;
 		}
 		printf("%c", letter);
 		letter++;
 	}
+	printf("\n");
 	return (0);
 }
