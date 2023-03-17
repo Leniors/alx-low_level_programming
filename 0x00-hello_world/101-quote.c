@@ -4,10 +4,10 @@
 /**
  * main - Entry point
  *
- * Return: Always 1 (Error)
+ * Return: 1 (Success)
  */
 int main(void)
 {
-	write("and hat piece of art is useful\" - Dora Korpar, 2015-10-19");
-	return (1);
+	fputs("and hat piece of art is useful\" - Dora Korpar, 2015-10-19\n", stdout);
+return (1);
 }
