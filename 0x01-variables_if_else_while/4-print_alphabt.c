@@ -6,18 +6,18 @@
  */
 int main(void)
 {
-	char letter = 'a';
+	char letter = 97;
 
-	while (letter <= 'z')
+	while (letter <= 122)
 	{
-		if (letter == 'e' || letter == 'q')
+		if (letter == 101 || letter == 113)
 		{
 			letter++;
 			continue;
 		}
-		printf("%c", letter);
+		putchar(letter);
 		letter++;
 	}
-	printf("\n");
+	putchar('\n');
 	return (0);
 }
