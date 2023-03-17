@@ -8,6 +8,7 @@
 int main(void)
 {
 	char letter = 'a';
+
 	while (letter <= 'z')
 	{
 		printf("%c", letter);
