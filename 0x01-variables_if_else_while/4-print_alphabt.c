@@ -12,8 +12,9 @@ int main(void)
 	{
 		if (letter != 'e' || letter != 'q')
 		{
-			printf("%c", letter);
+			continue;
 		}
+		putchar(letter);
 		letter++;
 	}
 	return (0);
