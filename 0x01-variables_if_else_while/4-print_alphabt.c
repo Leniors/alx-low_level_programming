@@ -15,7 +15,7 @@ int main(void)
 		letter++;
 		if (letter == 'e' || letter == 'q')
 		{
-			continue
+			continue;
 		}
 	return (0);
 }
