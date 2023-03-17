@@ -7,11 +7,11 @@
  */
 int main(void)
 {
-	char letter = 'a';
+	char letter = 97;
 
-	while (letter <= 'z')
+	while (letter <= 122)
 	{
-		printf("%c", letter);
+		putchar(letter);
 		letter++;
 	}
 	printf("\n");
