@@ -14,7 +14,7 @@ int main(void)
 		{
 			continue;
 		}
-		putchar(letter);
+		printf(letter);
 		letter++;
 	}
 	return (0);
