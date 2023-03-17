@@ -4,7 +4,6 @@
  *
  * Return: Always 0 (Success)
  */
-
 int main(void)
 {
 	char letter = 'a';
@@ -17,5 +16,6 @@ int main(void)
 		{
 			continue;
 		}
+	}
 	return (0);
 }
