@@ -6,19 +6,19 @@
  */
 int main(void)
 {
-	char upper_case = 'a';
-	char lowwer_case = 'A';
+	char upper_case = 97;
+	char lowwer_case = 65;
 
-	while (upper_case <= 'z')
+	while (upper_case <= 122)
 	{
-		printf("%c", upper_case);
+		putchar(upper_case);
 		upper_case++;
 	}
-	while (lowwer_case <= 'Z')
+	while (lowwer_case <= 90)
 	{
-		printf("%c", lowwer_case);
+		putchar(lowwer_case);
 		lowwer_case++;
 	}
-	printf("\n");
+	putchar('\n');
 	return (0);
 }
