@@ -11,13 +11,13 @@ int main(void)
 
 	while (upper_case <= 'z')
 	{
-		putchar("%c", upper_case);
+		printf("%c", upper_case);
 		upper_case++;
 	}
 	printf("\n");
 	while (lowwer_case <= 'Z')
 	{
-		putchar("%c", lowwer_case);
+		printf("%c", lowwer_case);
 		lowwer_case++;
 	}
 	printf("\n");
