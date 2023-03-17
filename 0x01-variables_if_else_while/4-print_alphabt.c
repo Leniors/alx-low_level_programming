@@ -13,7 +13,7 @@ int main(void)
 	{
 		printf("%c", letter);
 		letter++;
-		if (letter == e || letter == q)
+		if (letter == 'e' || letter == 'q')
 		{
 			continue
 		}
