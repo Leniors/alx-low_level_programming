@@ -3,6 +3,8 @@
 /**
  * print_sign - prints the sign of the n value.
  *
+ * @n : value entered to be evaluated.
+ *
  * Return: Always 0.
  */
 int print_sign(int n)
