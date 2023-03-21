@@ -19,7 +19,7 @@ void jack_bauer(void)
 				{
 					if (c == 4)
 					{
-						break;
+						return;
 					}
 					_putchar(a + 48);
 					_putchar(b + 48);
