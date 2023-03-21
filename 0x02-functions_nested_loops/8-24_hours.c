@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - check the code
+ * jack_bauer - prints clock hours.
  *
  * Return: Always 0.
  */
@@ -11,9 +11,9 @@ void jack_bauer(void)
 
 	for (a = 0; a <= 2; a++)
 	{
-		for (b = 0: b <= 3; b++)
+		for (b = 0; b <= 3; b++)
 		{
-			for (c = 0; b <= 5; b+=)
+			for (c = 0; c <= 5; c++)
 			{
 				for (d = 0; d <= 9; d++)
 				{
