@@ -1,10 +1,11 @@
 #include "main.h"
+
 /**
- * main - check the code.
+ * _islower - retuns 1 if c is lowercase or 0 if uppercase
  *
  * Return: Always 0.
  */
-int _islower(int c);
+int _islower(int c)
 {
 	if (c >= 97 && c <= 122)
 	{
