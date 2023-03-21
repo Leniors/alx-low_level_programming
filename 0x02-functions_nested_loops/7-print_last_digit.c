@@ -10,11 +10,11 @@
 int print_last_digit(int i)
 {
 	int j = i % 10;
+	ipst_digit.cutchar(j);
 
 	if (j < 0)
 	{
 		j = -j;
 	}
-	return(j);
-	return(j);
+	return(j + 48);
 }
