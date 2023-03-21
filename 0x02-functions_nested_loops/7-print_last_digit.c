@@ -11,12 +11,9 @@ int print_last_digit(int i)
 {
 	int j = i % 10;
 
-	if (j > 0)
+	if (j < 0)
 	{
-		return(j + 48);
+		j = -j;
 	}
-	else if (j < 0)
-	{
-		return (-j + 48);
-	}
+	return (j);
 }
