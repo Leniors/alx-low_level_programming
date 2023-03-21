@@ -20,5 +20,4 @@ int print_last_digit(int i)
 	{
 		return (-j + 48);
 	}
-	_putchar('\n');
 }
