@@ -8,8 +8,8 @@
 void print_alphabet_x10(void)
 {
 	int j;
-	int i = 10;
-	while (i <= 122)
+	int i = 0;
+	while (i <= 10)
 	{
 		j = 97;
 		while (j <= 122)
