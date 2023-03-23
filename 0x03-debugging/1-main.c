@@ -2,10 +2,7 @@
 
 /**
 * main - causes an infinite loop
-*
 * \o/ - description
-*
-* :( - description
 * Return: 0
 */
 
