@@ -1,5 +1,9 @@
 #include "main.h"
-
+/**
+ * positive_or_negative - function used to check state of a number.
+ *
+ * @i: integer being checked.
+ */
 void positive_or_negative(int i)
 {
 	if (i > 0)
