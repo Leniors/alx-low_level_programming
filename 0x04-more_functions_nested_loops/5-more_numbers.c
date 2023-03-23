@@ -20,6 +20,7 @@ void more_numbers(void)
 			}
 			_putchar(48 + i % 10);
 		}
+		k++;
 	}
 	_putchar('\n');
 }
