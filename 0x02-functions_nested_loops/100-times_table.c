@@ -43,7 +43,7 @@ void print_times_table(int n)
 				_putchar(48 + (k / 10));
 				_putchar(48 + (k % 10));
 			}
-			else
+			else if (k >= 100)
 			{
 				if (j < n)
 				{
