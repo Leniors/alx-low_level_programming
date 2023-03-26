@@ -20,17 +20,22 @@ void print_times_table(int n)
 			if (k < 10)
 			{
 				_putchar(48 + k);
+				_putchar(' ');
+				_putchar(' ');
+				_putchar(' ');
 			}
 			else if (k >= 10 && k < 100)
 			{
 				_putchar(48 + (k / 10));
 				_putchar(48 + (k % 10));
+				_putchar(' ');
+				_putchar(' ');
 			}
-			if (j < n)
+			else
 			{
-				_putchar(',');
-				_putchar(' ');
-				_putchar(' ');
+				_putchar(48 + product / 100);
+				_putchar(48 + (product % 100) / 10);
+				_putchar(48 + product % 10);
 				_putchar(' ');
 			}
 		}
