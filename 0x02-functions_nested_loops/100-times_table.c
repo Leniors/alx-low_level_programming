@@ -17,40 +17,43 @@ void print_times_table(int n)
 			int k;
 
 			k = i * j;
-			if (k < 10)
+			if (k == 0)
 			{
-				_putchar(48 + k);
+				_putchar(48);
+				_putchar(',');
+			}
+			if (k <= 9)
+			{
 				if (j < n)
 				{
 					_putchar(',');
 					_putchar(' ');
 					_putchar(' ');
 					_putchar(' ');
-					_putchar(' ');
 				}
+				_putchar(48 + k);
 			}
 			else if (k > 9 && k < 100)
 			{
-				_putchar(48 + (k / 10));
-				_putchar(48 + (k % 10));
 				if (j < n)
 				{
 					_putchar(',');
 					_putchar(' ');
 					_putchar(' ');
 				}
+				_putchar(48 + (k / 10));
+				_putchar(48 + (k % 10));
 			}
 			else
 			{
-				_putchar(48 + k / 100);
-				_putchar(48 + (k % 100) / 10);
-				_putchar(48 + k % 10);
 				if (j < n)
 				{
 					_putchar(',');
 					_putchar(' ');
-					_putchar(' ');
 				}
+				_putchar(48 + k / 100);
+				_putchar(48 + (k % 100) / 10);
+				_putchar(48 + k % 10);
 			}
 		}
 		_putchar('\n');
