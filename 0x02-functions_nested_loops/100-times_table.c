@@ -26,6 +26,7 @@ void print_times_table(int n)
 					_putchar(' ');
 					_putchar(' ');
 					_putchar(' ');
+					_putchar(' ');
 				}
 			}
 			else if (k > 9 && k < 100)
