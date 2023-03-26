@@ -28,13 +28,14 @@ void print_times_table(int n)
 					_putchar(' ');
 				}
 			}
-			else if (k >= 10 && k < 100)
+			else if (k > 9 && k < 100)
 			{
 				_putchar(48 + (k / 10));
 				_putchar(48 + (k % 10));
 				if (j < n)
 				{
 					_putchar(',');
+					_putchar(' ');
 					_putchar(' ');
 				}
 			}
