@@ -20,6 +20,7 @@ void print_times_table(int n)
 			if (k < 10)
 			{
 				_putchar(48 + k);
+				_putchar(',');
 				_putchar(' ');
 				_putchar(' ');
 				_putchar(' ');
@@ -28,6 +29,7 @@ void print_times_table(int n)
 			{
 				_putchar(48 + (k / 10));
 				_putchar(48 + (k % 10));
+				_putchar(',');
 				_putchar(' ');
 				_putchar(' ');
 			}
@@ -36,6 +38,7 @@ void print_times_table(int n)
 				_putchar(48 + k / 100);
 				_putchar(48 + (k % 100) / 10);
 				_putchar(48 + k % 10);
+				_putchar(',');
 				_putchar(' ');
 			}
 		}
