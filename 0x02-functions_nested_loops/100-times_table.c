@@ -33,9 +33,9 @@ void print_times_table(int n)
 			}
 			else
 			{
-				_putchar(48 + product / 100);
-				_putchar(48 + (product % 100) / 10);
-				_putchar(48 + product % 10);
+				_putchar(48 + k / 100);
+				_putchar(48 + (k % 100) / 10);
+				_putchar(48 + k % 10);
 				_putchar(' ');
 			}
 		}
