@@ -17,7 +17,7 @@ void print_times_table(int n)
 			int k;
 
 			k = i * j;
-			if (k == 0)
+			if (j == 0)
 			{
 				_putchar(48);
 			}
