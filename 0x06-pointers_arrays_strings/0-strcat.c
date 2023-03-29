@@ -4,6 +4,7 @@
  * _strcat - concatinates strings
  * @dest: first string
  * @src: second string
+ * Return: returns concatinated string
  */
 char *_strcat(char *dest, char *src)
 {
@@ -22,5 +23,7 @@ char *_strcat(char *dest, char *src)
 		_putchar(src[j]);
 		j++;
 	}
+	_putchar('\0');
+	return (dest);
 	_putchar('\n')
 }
