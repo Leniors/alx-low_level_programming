@@ -5,42 +5,22 @@
  * @s: string
  * Return: returns string
  */
-char *leet(char *s)
+char *leet(char *n)
 {
 	int i;
 	int j;
+	char s1[] = "aAeEoOtTlL";
+	char s2[] = "4433007711";
 
-	i = 0;
-	while (s[i] != '\0')
+	for (i = 0; n[i] != '\0'; i++)
 	{
-		i++;
+		for (j = 0; j < 10; j++)
+		{
+			if (n[i] == s1[j])
+			{
+				n[i] = s2[j];
+			}
+		}
 	}
-
-	j = 0;
-	while (j < i)
-	{
-		if (s[j] == 'a' || s[j] == 'A')
-		{
-			s[j] = '4';
-		}
-		else if (s[j] == 'e' || s[j] == 'E')
-		{
-			s[j] = '3';
-		}
-		else if (s[j] == 'o' || s[j] == 'O')
-		{
-			s[j] = '0';
-		}
-		else if (s[j] == 't' || s[j] == 'T')
-		{
-			s[j] = '7';
-		}
-		else if (s[j] == 'l' || s[j] == 'L')
-		{
-			s[j] = '1';
-		}
-
-		j++;
-	}
-	return (s);
+	return (n);
 }
