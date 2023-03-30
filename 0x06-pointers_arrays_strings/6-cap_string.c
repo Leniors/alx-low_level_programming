@@ -22,9 +22,9 @@ char *cap_string(char *s)
 	{
 		if (s[j] == ' ' || s[j] == '.' || s[j] == '\n' || s[j] == ',' || s[j] == '!' || s[j] == '\t')
 		{
-			s[j + 1] -= 32;
-			j++;
+			s[j + 1] = toupper(s[j + 1]);
 		}
+		j++;
 	}
 	return (s);
 }
