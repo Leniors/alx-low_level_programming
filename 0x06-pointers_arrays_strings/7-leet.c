@@ -2,7 +2,7 @@
 
 /**
  * leet - replaces char
- * @s: string
+ * @n: string
  * Return: returns string
  */
 char *leet(char *n)
