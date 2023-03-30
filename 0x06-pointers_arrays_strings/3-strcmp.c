@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * strcmp - comparess two strings
+ * _strcmp - comparess two strings
  * @s1: first string
  * @s2: second string
  * Return: retuns a value
@@ -20,12 +20,10 @@ int _strcmp(char *s1, char *s2)
 		else if (s1[i] < s2[i])
 		{
 			return (-15);
-			break;
 		}
 		else if (s1[i] > s2[i])
 		{
 			return (15);
-			break;
 		}
 	}
 	return (0);
