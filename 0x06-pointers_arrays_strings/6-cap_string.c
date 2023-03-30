@@ -9,22 +9,19 @@
 char *cap_string(char *s)
 {
 	int i;
-	int j;
 
 	i = 0;
-	while (s[i] != '\0')
+	while (s[i])
 	{
-		i++;
-	}
-
-	j = 0;
-	while (j < i)
-	{
-		if (s[j] == ' ' || s[j] == '.' || s[j] == '\n' || s[j] == ',' || s[j] == '!' || s[j] == '\t' || s[j] == ';' || s[j] == '?' || s[j] == '"' || s[j] == '(' || s[j] == ')' || s[j] == '{' || s[j] == '}')
+		while (!(str[i] >= 'a' && str[i] <= 'z'))
 		{
-			s[j + 1] = toupper(s[j + 1]);
+			i++;
 		}
-		j++;
+		if (str[i - 1] == ' ' || str[i - 1] == '\t' || str[i - 1] == '\n' || str[i - 1] == ',' || str[i - 1] == '.' || str[i - 1] == ';' || str[i - 1] == '!' || str[i - 1] == '?' || str[i - 1] == '"' || str[i - 1] == '(' || str[i - 1] == ')' || str[i - 1] == '{' || str[i - 1] == '}' || i == 0)
+		{
+			s[i] -= 32;
+		}
+		i++;
 	}
 	return (s);
 }
