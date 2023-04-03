@@ -4,7 +4,6 @@
  * _strspn - returns sub string length
  * @s: string
  * @accept: substring
- * @m: string being returned
  * Return: returns length
  */
 unsigned int _strspn(char *s, char *accept)
