@@ -5,6 +5,7 @@
  * @s: string
  * @b: character
  * @n: integer
+ * Return: returns manipulated string
  */
 char *_memset(char *s, char b, unsigned int n)
 {
