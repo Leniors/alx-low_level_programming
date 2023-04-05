@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * _sqrt_recurtion - returns sqrt of n
+ * _sqrt_recursion - returns sqrt of n
  * @n: number
  * Return: returns integer
  */
-int _sqrt_recurtion(int n)
+int _sqrt_recursion(int n)
 {
 	int i;
 
@@ -21,5 +21,5 @@ int _sqrt_recurtion(int n)
 			return (i);
 		}
 	}
-	return (_sqrt_recurtion(n));
+	return (_sqrt_recursion(n));
 }
