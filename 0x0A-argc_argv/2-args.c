@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - mainfunction
@@ -6,7 +7,7 @@
  * @argv: array
  * Return: always 0 success
  */
-int main(int argc, char* argv)
+int main(int argc, char *argv[])
 {
 	int i;
 
