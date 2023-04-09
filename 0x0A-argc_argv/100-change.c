@@ -2,6 +2,7 @@
 #include <stdlib.h>
 
 /**
+ * main - main function
  * @argc: count
  * @argv: v
  * Return: always success
@@ -10,6 +11,7 @@ int main(int argc, char *argv[])
 {
 	int i;
 	int num;
+
 	if (argc != 2)
 	{
 		printf("Error\n");
