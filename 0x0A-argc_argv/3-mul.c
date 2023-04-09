@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - mainfunction
@@ -8,14 +9,12 @@
  */
 int main(int argc, char *argv[])
 {
-	int mul;
-	int sum = 0;
+	int i;
 
 	if (argc > 1)
 	{
-		mul = (argv[1]) * (argv[2]);
-		sum += mul;
-		printf("%d", sum);
+		i = atoi(argv[1]) * atoi(argv[2]);
+		printf("%d\n", i);
 	}
 	else
 	{
