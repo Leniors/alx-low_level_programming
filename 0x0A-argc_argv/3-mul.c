@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 
 	if (argc > 1)
 	{
-		mul = argv[1] * argv[2];
+		mul = (argv[1]) * (argv[2]);
 		printf("%d\n", mul);
 	}
 	else
