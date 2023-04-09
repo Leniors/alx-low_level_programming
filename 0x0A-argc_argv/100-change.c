@@ -8,13 +8,15 @@
  */
 int main(int argc, char *argv[])
 {
+	int i;
+	int num;
 	if (argc != 2)
 	{
 		printf("Error");
 		return (1);
 	}
 
-	int i = atoi(argv[1]);
+	i = atoi(argv[1]);
 
 	if (i < 0)
 	{
@@ -22,7 +24,7 @@ int main(int argc, char *argv[])
 		return (0);
 	}
 
-	int num = 0;
+	num = 0;
 
 	num += i / 25;
 	i %= 25;
