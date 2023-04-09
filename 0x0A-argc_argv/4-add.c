@@ -18,10 +18,10 @@ int main(int argc, char *argv[])
 	}
 	else if (argc > 1)
 	{
-		i = 0;
+		i = 1;
 		while (i < argc)
 		{
-			if (atoi(argv[i]) > 1000)
+			if (atoi(argv[i]) > 0)
 			{
 				sum += atoi(argv[i]);
 			}
