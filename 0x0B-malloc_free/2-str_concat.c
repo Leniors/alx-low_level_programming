@@ -39,12 +39,12 @@ char *str_concat(char *s1, char *s2)
 		i++;
 	}
 	j = 0;
+	i++;
 	while (s2[i] != '\0')
 	{
 		p[i] = s2[j];
 		i++;
 		j++;
 	}
-
 	return (p);
 }
