@@ -2,7 +2,7 @@
 
 /**
  * free_grid - ffrees 2D array
- * @**grid: grid
+ * @grid: grid
  * @height: int
  * Return: returns
  */
