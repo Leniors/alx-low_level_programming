@@ -11,19 +11,22 @@ char *str_concat(char *s1, char *s2)
 	char *p;
 	int i;
 	int j;
-	int len;
+	int len1;
+	int len2;
 
-	while (s1[i] != '\0')
+	len1 = 0;
+	while (s1[len1] != '\0')
 	{
-		len++;
+		len1++;
 	}
 
+	len2 = 0;
 	while (s2[j] != '\0')
 	{
-		len++;
+		len2++;
 	}
 
-	p = malloc((len + 1) * sizeof(char));
+	p = malloc((len1 + len2 + 1) * sizeof(char));
 
 	if (p == NULL)
 	{
