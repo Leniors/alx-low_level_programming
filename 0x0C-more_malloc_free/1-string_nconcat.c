@@ -4,7 +4,8 @@
 /**
  * *string_nconcat - concatinates strings
  * @s1: string
- * @s2: string @n: int
+ * @s2: string
+ * @n: int
  * Return: pointer
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
@@ -22,7 +23,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s2 = "";
 	}
 
-	p = malloc(sizeof(char) * n);
+	p = malloc(sizeof(unsigned int) * n);
 	if (p == NULL)
 	{
 		return (NULL);
