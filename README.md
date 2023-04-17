@@ -1,1 +1,1 @@
-even more pointers
+structures and typedef
