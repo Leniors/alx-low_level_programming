@@ -10,7 +10,8 @@
 int main(int argc, char *argv[])
 {
 	int bytes, i;
-	char *arr;
+	int (*address)(int, char **) = main;
+	unsigned char arr;
 
 	if (argc != 2)
 	{
@@ -23,15 +24,17 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(2);
 	}
-	arr = (char *)main;
 	for (i = 0; i < bytes; i++)
 	{
+		arr = *(unsigned char *)address;
+		printf("%.2x", arr);
 		if (i == bytes - 1)
 		{
-			printf("%02hhx\n", arr[i]);
-			break;
+			continue;
 		}
-		printf("%02hhx", arr[i]);
+		printf(" ");
+		address++;
 	}
+	printf("\n");
 	return (0);
 }
