@@ -5,6 +5,7 @@
  * array_iterator - prints each array
  * @array: array
  * @size: elements@action: pointer
+ * @action: pointer
  * Return: void
  */
 void array_iterator(int *array, size_t size, void (action)(int))
