@@ -5,14 +5,20 @@
  * sum_them_all - sums
  * @n: numer
  * @...: varables
- * Return: 0 is success
+ * Return: always 0 is success
  */
 int sum_them_all(const unsigned int n, ...)
 {
+	int sum;
+	unsigned int i;
 	va_list ap;
-	unsigned int i, sum = 0;
 
 	va_start(ap, n);
+
+	if (n == 0)
+	{
+		return (0);
+	}
 
 	for (i = 0; i < n; i++)
 	{
@@ -21,5 +27,5 @@ int sum_them_all(const unsigned int n, ...)
 
 	va_end(ap);
 
-	return (sum);
+	return (0);
 }
