@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * print_all  prints all
+ * print_all - prints all
  * @format: list
  */
 void print_all(const char * const format, ...)
@@ -46,7 +46,6 @@ void print_all(const char * const format, ...)
 			i++;
 		}
 	}
-
 	printf("\n");
 	va_end(list);
 }
