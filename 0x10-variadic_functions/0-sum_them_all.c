@@ -9,16 +9,16 @@
  */
 int sum_them_all(const unsigned int n, ...);
 {
-	va_list arg;
+	va_list ap;
 	unsigned int i, sum = 0;
 
-	va_start(arg, n);
+	va_start(ap, n);
 
 	for (i = 0; i < n; i++)
 	{
-		sum += va_arg(arg, int);
+		sum += va_arg(ap, int);
 	}
-	va_end(arg);
+	va_end(ap);
 
 	return (sum);
 }
