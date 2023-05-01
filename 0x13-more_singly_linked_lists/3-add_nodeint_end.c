@@ -5,7 +5,7 @@
  * add_nodeint_end - adds an element
  * @head: linke list
  * @n: integer
- * Retur: address
+ * Return: address
  */
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
