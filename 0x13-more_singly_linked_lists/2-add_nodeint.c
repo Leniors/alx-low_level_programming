@@ -1,5 +1,5 @@
 #include "lists.h"
-#include <stdlib.>
+#include <stdlib.h>
 
 /**
  * add_nodeint - adds a node
@@ -18,8 +18,8 @@ listint_t *add_nodeint(listint_t **head, const int n)
 	}
 
 	new->n = n;
-	new->next = head;
-	head = new;
+	new->next = *head;
+	*head = new;
 
 	return (new);
 }
