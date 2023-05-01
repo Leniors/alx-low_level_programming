@@ -19,7 +19,7 @@ listint_t *add_nodeint_end(listint_t **hesd, const int n)
 
 	while (*head)
 	{
-		if (*head == NULL)
+		if (*head->next == NULL)
 		{
 			new_node-> = *head;
 			new_node->next = NULL;
