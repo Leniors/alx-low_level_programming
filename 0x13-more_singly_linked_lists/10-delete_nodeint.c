@@ -1,5 +1,6 @@
 #include "lists.h"
 #include <stdlib.h>
+#include <stddef.h>
 
 /**
  * delete_nodeint_at_index - deletes
@@ -26,7 +27,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 
 	while (i < index - 1)
 	{
-		if (!temp || temp->next == NULL)
+		if (!temp || (temp->next))
 		{
 			return (-1);
 		}
