@@ -8,7 +8,7 @@
  * @n: integer
  * Return: returns an address
  */
-listint_t *insert_nodeint_at_index(listintint_t **head, unsigned int idx, int n)
+listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
 	listint_t *current;
 	listint_t *new;
