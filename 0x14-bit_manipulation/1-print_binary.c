@@ -7,21 +7,24 @@
  */
 void print_binary(unsigned long int n)
 {
-	int i;
-	unsigned long int mask;
+	int i, count = 0;
+	unsigned long int current;
 
-	mask = 1UL << (sizeof(unsigned long int) * 8 - 1);
-	for (i = 0; i < sizeof(unsigned long int) * 8; i++)
-	{
-		if (n & mask)
+	for (i = 0; i >= 0; i--)
+	{ 
+		current = n >> i;
+		if (current & 1)
 		{
-			_putchar('1');
+			_putchar('1);
+			count++;
 		}
-		else
+		else if (count)
 		{
 			_putchar('0');
 		}
-		mask >>= 1;
 	}
-	_putchar('\n');
+	if (!count)
+	{
+		_putchar('0');
+	}
 }
