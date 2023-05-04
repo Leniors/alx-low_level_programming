@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * get_bit - returns the value
+ * get_bit - returns the vlue of  bit
  * @n: number
  * @index: index
  * Return
