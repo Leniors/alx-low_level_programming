@@ -4,7 +4,7 @@
  * get_bit - returns the vlue of  bit
  * @n: number
  * @index: index
- * Return
+ * Return: returns
  */
 int get_bit(unsigned long int n, unsigned int index)
 {

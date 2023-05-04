@@ -6,23 +6,15 @@
  */
 void print_binary(unsigned long int n)
 {
-	int i, count = 0;
-	unsigned long int current;
-
-	for (i = 0; i >= 0; i--)
+	if (n >> 0)
 	{
-		current = n >> i;
-		if (current & 1)
+		if (n >> 1)
 		{
-			_putchar('1');
-			count++;
+			print_binary(n >> 1);
 		}
-		else if (count)
-		{
-			_putchar('0');
-		}
+		_putchar((n & 1) + '0');
 	}
-	if (!count)
+	else
 	{
 		_putchar('0');
 	}
