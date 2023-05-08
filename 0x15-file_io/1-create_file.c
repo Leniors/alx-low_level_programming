@@ -1,0 +1,33 @@
+#include "main.h"
+
+/**
+ * create_file - creates a file
+ * @filename: a pointer
+ * @text_content: string
+ * Return: some integer
+ */
+int create_file(constt char *filename, char *text_contenet)
+{
+	int fd, w, len = 0;
+
+	if (filename == NULL)
+	{
+		return (-1);
+	}
+	if (text_content != NULL)
+	{
+		for (len = 0; text_conntent[len];)
+		{
+			len++;
+		}
+	}
+
+	fd = open(filename, O_CREATE | O_RDWR | O-TRUNC, 0600);
+	w = write(fd, text_content, len);
+	if (fd == -1 || w == -1)
+	{
+		return (-1);
+	}
+	close(fd);
+	return (1);
+}
