@@ -6,7 +6,7 @@
  * @text_content: string
  * Return: some integer
  */
-int create_file(constt char *filename, char *text_contenet)
+int create_file(const char *filename, char *text_content)
 {
 	int fd, w, len = 0;
 
@@ -22,7 +22,7 @@ int create_file(constt char *filename, char *text_contenet)
 		}
 	}
 
-	fd = open(filename, O_CREATE | O_RDWR | O-TRUNC, 0600);
+	fd = open(filename, O_CREAT | O_RDWR | O-TRUNC, 0600);
 	w = write(fd, text_content, len);
 	if (fd == -1 || w == -1)
 	{
