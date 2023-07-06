@@ -2,15 +2,16 @@
 
 /**
  * get_bit - function
- * n: integer
- * index: index
+ * @n: integer
+ * @index: index
  * Return: returns int
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
-	unsigned int mask = 1 << index;
-	int i;
+	unsigned long int mask = 1 << index;
 	
-	i = n & mask;
-	return (i);
+	if ((n & mask) == mask)
+		return (1);
+	else
+		return (0);
 }
