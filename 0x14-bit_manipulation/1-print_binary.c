@@ -4,7 +4,7 @@
  * print_binary - function
  * n: unsigned int
  */
-voiid print_binary(unsigned long int n) {
+void print_binary(unsigned long int n) {
 	unsigned int mask = 1;
 
 	if (n > 1) {
