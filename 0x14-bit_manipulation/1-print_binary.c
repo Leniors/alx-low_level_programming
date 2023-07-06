@@ -2,7 +2,7 @@
 
 /**
  * print_binary - function
- * n: unsigned int
+ * @n: unsigned int
  */
 void print_binary(unsigned long int n)
 {

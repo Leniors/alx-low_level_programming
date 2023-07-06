@@ -2,7 +2,7 @@
 
 /**
  * binary_to_uint - function
- * b: string
+ * @b: string
  * Return: returns uint
  */
 unsigned int binary_to_uint(const char *b)
@@ -16,7 +16,7 @@ unsigned int binary_to_uint(const char *b)
 	while (b[len] != '\0')
 	{
 		if (b[len] != '1' && b[len] != '0')
-			return 0;
+			return (0);
 		len++;
 	}
 
@@ -34,5 +34,5 @@ unsigned int binary_to_uint(const char *b)
 			decimal += j;
 		}
 	}
-	return decimal;
+	return (decimal);
 }
