@@ -12,7 +12,7 @@ int set_bit(unsigned long int *n, unsigned int index)
 
 	if (*n != (NULL))
 	{
-		*n = *n | mask;
+		*n = (*n | mask);
 		return (1);
 	}
 	else
