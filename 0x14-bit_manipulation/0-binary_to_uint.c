@@ -13,13 +13,13 @@ unsigned int binary_to_uint(const char *b) {
 	unsigned int j;
 
 	while (b[len] != '\0') {
-		if (b[len] != 1 || b[len] != 0) {
+		if (b[len] != 1 && b[len] != 0) {
 			return 0;
 		}
 		len++;
 	}
 
-	for (i = 0; i< len; i++) {
+	for (i = 0; i < len; i++) {
 		if (b[i] == 1) {
 			power = len -1 - i;
 			j = 1;
