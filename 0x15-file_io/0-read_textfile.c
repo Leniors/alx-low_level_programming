@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * read_textfilr - function
+ * read_textfile - function
  * @filename: filename
  * @letters: number of bytes
  * Return: returns
