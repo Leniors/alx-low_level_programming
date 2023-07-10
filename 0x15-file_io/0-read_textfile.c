@@ -6,7 +6,7 @@
  * @letters: number of letters to read
  * @Return: returns size
  */
-ssize read_textfile(const char *fileame, size_t letters)
+ssize_t read_textfile(const char *fileame, size_t letters)
 {
 	int fd;
 	ssize_t sizeread[letters];
@@ -14,6 +14,7 @@ ssize read_textfile(const char *fileame, size_t letters)
 	fd = open(filename, O_RDONLY);
 	if (fd == -1 || *filename == NULL)
 		return 0;
-	read(fd, sizeread, STDOUT_FILENO);
+	sizeread = read(fd, STDOUT_FILENO);
 	close(fd);
+	return (sizeread);
 }
