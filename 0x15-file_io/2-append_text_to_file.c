@@ -3,7 +3,7 @@
 /**
  * append_text_to_file - appends text
  * @filename: file name
- * @text_content
+ * @text_content: content
  * Return: intrger
  */
 int append_text_to_file(const char *filename, char *text_content)
