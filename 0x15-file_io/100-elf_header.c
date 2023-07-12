@@ -19,7 +19,7 @@ void close_elf(int elf);
 
 /**
  * check_elf - Checks if a file is an ELF file.
- * @e_ident: A pointer to an array containing the ELF magic number
+ * @e_ident: A pointer to an array containing the ELF magic numbers.
  *
  * Description: If the file is not an ELF file - exit code 98.
  */
@@ -29,56 +29,61 @@ void check_elf(unsigned char *e_ident)
 
 	for (index = 0; index < 4; index++)
 	{
-		if (e_ident[index] != 127 && e_ident[index] != 'E' && e_ident[index] != 'L' && e_ident[index] != 'F')
+		if (e_ident[index] != 127 &&
+		    e_ident[index] != 'E' &&
+		    e_ident[index] != 'L' &&
+		    e_ident[index] != 'F')
 		{
 			dprintf(STDERR_FILENO, "Error: Not an ELF file\n");
 			exit(98);
 		}
 	}
 }
+
 /**
- * print_magic - prints the magic number
- * @e_ident: a pointer
- * Description: magic
+ * print_magic - Prints the magic numbers of an ELF header.
+ * @e_ident: A pointer to an array containing the ELF magic numbers.
+ *
+ * Description: Magic numbers are separated by spaces.
  */
 void print_magic(unsigned char *e_ident)
 {
 	int index;
 
-	print("Magic: ");
+	printf(" Magic: ");
 
-	for (index = 0; index < EL_NIDENT; index++)
+	for (index = 0; index < EI_NIDENT; index++)
 	{
 		printf("%02x", e_ident[index]);
 
-		if (index == EL_NIDENT - 1)
-			print("\n");
+		if (index == EI_NIDENT - 1)
+			printf("\n");
 		else
 			printf(" ");
 	}
 }
 
 /**
- * print_class - prints
- * @e_ident: a pointer
+ * print_class - Prints the class of an ELF header.
+ * @e_ident: A pointer to an array containing the ELF class.
  */
-void print_class(unsigned chr *e_ident)
+void print_class(unsigned char *e_ident)
 {
-	printf("Class: ");
+	printf(" Class: ");
 
-	switch (e_ident[EL_CLASS])
+	switch (e_ident[EI_CLASS])
 	{
-		case ELFCLASSNONE:
-			printf("none\n");
-			break;
-		case ELFCLASS32:
-			printf("ELF32\n");
-			break;
-		case ELFCLASS64:
-			printf("ELF64\n");
-			break;
-		default:
-			printf("<unknown: %x>\n", e_ident[EL_CLASS]);
+	case ELFCLASSNONE:
+		printf("none\n");
+		break;
+	case ELFCLASS32:
+		printf("ELF32\n");
+		break;
+	case ELFCLASS64:
+		printf("ELF64\n");
+		break;
+	default:
+		printf("<unknown: %x>\n", e_ident[EI_CLASS]);
 	}
 }
 
