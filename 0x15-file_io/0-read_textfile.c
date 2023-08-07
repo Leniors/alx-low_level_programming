@@ -3,7 +3,7 @@
 /**
  * read_textfile - reads a text file
  * @filename: file name
- * @letters; letters
+ * @letters: letters
  * Return: number of bytes written
  */
 ssize_t read_textfile(const char *filename, size_t letters)
@@ -34,6 +34,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 	free(buffer);
-	close (fd);
+	close(fd);
 	return (written);
 }
