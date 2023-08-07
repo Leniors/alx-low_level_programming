@@ -25,15 +25,13 @@ int create_file(const char *filename, char *text_content)
 	{
 		return (-1);
 	}
-	if (!text_content)
+	if (text_content)
 	{
-		close(fd);
-		return (1);
-	}
-	written = write(fd, text_content, len);
-	if (written == -1)
-	{
-		return (-1);
+		written = write(fd, text_content, len);
+		if (written == -1)
+		{
+			return (-1);
+		}
 	}
 	close(fd);
 	return (1);
