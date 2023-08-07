@@ -12,9 +12,12 @@ int create_file(const char *filename, char *text_content)
 	ssize_t written;
 	int len = 0;
 
-	while (text_content[len] != '\0')
+	if (text_content != NULL)
 	{
-		len++;
+		for (len = 0; text_content[len];)
+		{
+			len++;
+		}
 	}
 	if (!filename)
 	{
@@ -25,14 +28,12 @@ int create_file(const char *filename, char *text_content)
 	{
 		return (-1);
 	}
-	if (text_content)
+	written = write(fd, text_content, len);
+	if (written == -1)
 	{
-		written = write(fd, text_content, len);
-		if (written == -1)
-		{
-			return (-1);
-		}
+		return (-1);
 	}
+
 	close(fd);
 	return (1);
 }
