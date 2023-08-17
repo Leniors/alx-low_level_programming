@@ -2,7 +2,7 @@
 #include "stdio.h"
 
 /**
- * print_dlistint - print elements of a linked list
+ * dlistint_len - returns size of linked list
  * @h: head
  * Return: ssize
  */
