@@ -5,6 +5,7 @@
  * @h: head of linked list
  * @idx: index
  * @n: value
+ * Return: node
  */
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
