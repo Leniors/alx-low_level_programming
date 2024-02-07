@@ -40,7 +40,16 @@ int binary_search(int *array, size_t size, int value)
 
 		if (low == high)
 		{
+			loop(low, high, array);
 			return low;
+		}
+		else if ((high - low) == 1 && array[low] == value)
+		{
+			return low;
+		}
+		else if ((high - low) == 1 && array[high] == value)
+		{
+			return high;
 		}
 		else if (array[mid] == value)
 		{
