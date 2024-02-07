@@ -26,31 +26,35 @@ void loop(int start, int mid, int *array)
 int binary_search(int *array, size_t size, int value)
 {
 	int mid;
-	int i = 0;
-	int x = size - 1;
+	int low = 0;
+	int high = size - 1;
 	
 	if (array == NULL)
 		return -1;
 	
-	loop(i, x, array);
+	loop(low, high, array);
 
-	while (i < x)
+	while (low < high)
 	{
-		mid = i + (int)((x - i) / 2);
+		mid = low + (int)((high - low) / 2);
 
-		if (array[mid] == value)
+		if (low == high)
+		{
+			return low;
+		}
+		else if (array[mid] == value)
 		{
 			return mid;
 		}
 		else if (array[mid] < value)
 		{
-			i = mid + 1;
-			loop(i, x, array);
+			low = mid + 1;
+			loop(low, high, array);
 		}
 		else
 		{
-			x = mid - 1;
-			loop(i, x, array);
+			high = mid - 1;
+			loop(low, high, array);
 		}
 	}
 
